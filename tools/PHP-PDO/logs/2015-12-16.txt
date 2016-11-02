@@ -1,0 +1,127 @@
+Time : 16:57:02
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 9
+Raw SQL : INSERT INTO tblm4wTarget VALUES(
+								null,
+								:c,
+								:v,
+								'1',
+								null,
+								'1',
+								'',
+								)
+
+Time : 16:56:49
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{(
+								null,
+								?,
+								?,
+								'1',
+								null,
+								' at line 1
+Raw SQL : INSERT INTO tblm4wTarget VALUES{(
+								null,
+								:c,
+								:v,
+								'1',
+								null,
+								'1',
+								'',
+								)
+
+Time : 12:31:31
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tblmproductreviewcomments' doesn't exist
+Raw SQL : SELECT * FROM  tblmProductReviewComments WHERE review_id=1 ORDER BY review_timestamp DESC
+
+Time : 12:26:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tblmproductreviewcomments' doesn't exist
+Raw SQL : SELECT * FROM  tblmProductReviewComments WHERE review_id=1 ORDER BY review_timestamp DESC
+
+Time : 12:06:10
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : 
+		select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+		
+
+Time : 12:05:08
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : 
+		select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+		
+
+Time : 12:04:12
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : 
+		select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+		
+
+Time : 12:03:12
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : 
+		select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+		
+
+Time : 12:03:01
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : 
+		select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+		
+
+Time : 12:02:47
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : 
+		select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+		
+
+Time : 12:02:45
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : 
+		select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+		
+
+Time : 12:01:51
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : 
+		select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+		
+
+Time : 12:00:36
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+
+Time : 11:59:56
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : select distinct(t1.`settlement_id`) from tblmSettlement t1
+		left join (select marketplace_name,settlement_id from tblmSettlementDtl where marketplace_name = :mkp ) t2 on t1.settlement_id = t2.settlement_id
+		where  t2.marketplace_name = :mkp
+		order by t1.settlement_start_date desc limit 2
+
+Time : 07:51:56
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tblmproductreviewcomments' doesn't exist
+Raw SQL : SELECT * FROM  tblmProductReviewComments WHERE review_id=1 ORDER BY review_timestamp DESC

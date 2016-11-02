@@ -1,0 +1,56 @@
+.btn:hover{
+	color:#fff;
+}
+.btn:active{
+	color:#fff;
+}
+.btn:focus{
+	color:#fff;
+	outline: none;
+}
+
+
+
+/*light*/
+.btn-l{
+	color:#fff;
+	background-color:#E9BD36;
+}
+/*dark*/
+.btn-d{
+	color:#fff;
+	background-color:#67215D;
+}
+
+
+/*water*/
+.btn-w{
+	color:#fff;
+	background-color:#05459D;
+}
+
+/*fire*/
+.btn-f{
+	color:#fff;
+	background-color:#DD6D25;
+}
+
+/*nature*/
+.btn-n{
+	color:#fff;
+	background-color:#609D35;
+}
+
+
+/*earth*/
+.btn-e{
+	color:#fff;
+	background-color:#72401B;
+}
+
+
+
+
+.elebtn-div{
+	margin-bottom:10px;
+}

@@ -1,0 +1,301 @@
+Time : 16:22:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tbl_aws_products' doesn't exist
+Raw SQL : select 
+		t1.sku,
+		t1.asin,
+		t1.country,
+		t2.total_quantity,
+		t2.sellable_quantity,
+		t2.unsellable_quantity,
+		t2.inv_age_0_to_90_days,
+		t2.inv_age_91_to_180_days,
+		t2.inv_age_181_to_270_days,
+		t2.inv_age_271_to_365_days,
+		t2.inv_age_365_plus_days,
+		t2.unsellable_quantity,
+		t4.ListingPrice,
+		t4.ListingPrice_CurrencyCode
+		from 
+		tbl_aws_products t1 
+		left join tblminvhealth t2 on t1.sku = t2.sku
+		left join tblmProductPrice t4 on t1.sku = t4.sku
+		where 
+		t2.snapshot_date = (SELECT MAX(t3.snapshot_date)
+		FROM tblminvhealth t3
+		WHERE t3.sku = t1.sku)
+
+Time : 16:21:45
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tbl_aws_products' doesn't exist
+Raw SQL : select 
+		t1.sku,
+		t1.asin,
+		t1.country,
+		t2.total_quantity,
+		t2.sellable_quantity,
+		t2.unsellable_quantity,
+		t2.inv_age_0_to_90_days,
+		t2.inv_age_91_to_180_days,
+		t2.inv_age_181_to_270_days,
+		t2.inv_age_271_to_365_days,
+		t2.inv_age_365_plus_days,
+		t2.unsellable_quantity,
+		t4.ListingPrice,
+		t4.ListingPrice_CurrencyCode
+		from 
+		tbl_aws_products t1 
+		left join tblminvhealth t2 on t1.sku = t2.sku
+		left join tblmProductPrice t4 on t1.sku = t4.sku
+		where 
+		t2.snapshot_date = (SELECT MAX(t3.snapshot_date)
+		FROM tblminvhealth t3
+		WHERE t3.sku = t1.sku)
+
+Time : 16:21:42
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tblmproductreviewcomments' doesn't exist
+Raw SQL : SELECT * FROM  tblmProductReviewComments WHERE review_id=1 ORDER BY review_timestamp DESC
+
+Time : 13:38:52
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'settlement_id'
+Raw SQL : INSERT INTO 
+										  tblmSettlement
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :settlement_start_date,
+										  :settlement_end_date,
+										  :deposit_date,
+										  :total_amount,
+										  :currency,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 13:38:16
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'settlement_id'
+Raw SQL : INSERT INTO 
+										  tblmSettlement
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :settlement_start_date,
+										  :settlement_end_date,
+										  :deposit_date,
+										  :total_amount,
+										  :currency,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 13:37:45
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'settlement_id'
+Raw SQL : INSERT INTO 
+										  tblmSettlement
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :settlement_start_date,
+										  :settlement_end_date,
+										  :deposit_date,
+										  :total_amount,
+										  :currency,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 13:35:55
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'settlement_id'
+Raw SQL : INSERT INTO 
+										  tblmSettlement
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :settlement_start_date,
+										  :settlement_end_date,
+										  :deposit_date,
+										  :total_amount,
+										  :currency,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 13:34:38
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'settlement_id'
+Raw SQL : INSERT INTO 
+										  tblmSettlement
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :settlement_start_date,
+										  :settlement_end_date,
+										  :deposit_date,
+										  :total_amount,
+										  :currency,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 13:30:17
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'settlement_id'
+Raw SQL : INSERT INTO 
+										  tblmSettlement
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :settlement_start_date,
+										  :settlement_end_date,
+										  :deposit_date,
+										  :total_amount,
+										  :currency,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 12:59:19
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUES(
+										  null,
+										  ?,
+										  ?,
+										  ?,
+				' at line 3
+Raw SQL : INSERT INTO 
+										   
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :transaction_type,
+										  :order_id,
+										  :merchant_order_id,
+										  :adjustment_id,
+										  :shipment_id,
+										  :marketplace_name,
+										  :amount_type,
+										  :amount_description,
+										  :amount,
+										  :fulfillment_id,
+										  :posted_date,
+										  :posted_date_time,
+										  :order_item_code,
+										  :merchant_order_item_id,
+										  :merchant_adjustment_item_id,
+										  :sku,
+										  :quantity_purchased,
+										  :promotion_id,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 12:57:37
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUES(
+										  null,
+										  ?,
+										  ?,
+										  ?,
+				' at line 3
+Raw SQL : INSERT INTO 
+										  
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :transaction_type,
+										  :order_id,
+										  :merchant_order_id,
+										  :adjustment_id,
+										  :shipment_id,
+										  :marketplace_name,
+										  :amount_type,
+										  :amount_description,
+										  :amount,
+										  :fulfillment_id,
+										  :posted_date,
+										  :posted_date_time,
+										  :order_item_code,
+										  :merchant_order_item_id,
+										  :merchant_adjustment_item_id,
+										  :sku,
+										  :quantity_purchased,
+										  :promotion_id,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 12:55:18
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+Raw SQL : INSERT INTO 
+										  tblmSettlement
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :transaction_type,
+										  :order_id,
+										  :merchant_order_id,
+										  :adjustment_id,
+										  :shipment_id,
+										  :marketplace_name,
+										  :amount_type,
+										  :amount_description,
+										  :amount,
+										  :fulfillment_id,
+										  :posted_date,
+										  :posted_date_time,
+										  :order_item_code,
+										  :merchant_order_item_id,
+										  :merchant_adjustment_item_id,
+										  :sku,
+										  :quantity_purchased,
+										  :promotion_id,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 12:51:38
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+Raw SQL : INSERT INTO 
+										  tblmSettlement
+										  VALUES(
+										  null,
+										  :settlement_id,
+										  :transaction_type,
+										  :order_id,
+										  :merchant_order_id,
+										  :adjustment_id,
+										  :shipment_id,
+										  :marketplace_name,
+										  :amount_type,
+										  :amount_description,
+										  :amount,
+										  :fulfillment_id,
+										  :posted_date,
+										  :posted_date_time,
+										  :order_item_code,
+										  :merchant_order_item_id,
+										  :merchant_adjustment_item_id,
+										  :sku,
+										  :quantity_purchased,
+										  :promotion_id,
+										  '1',
+										  null,
+										  '1',
+										  ''
+										  )
+
+Time : 12:01:26
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sku' in 'field list'
+Raw SQL : SELECT sku FROM tblmSettlement WHERE settlement_id = :sid

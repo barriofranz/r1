@@ -1,0 +1,15 @@
+Time : 13:49:57
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tbl_cs_product_reviews_comments' doesn't exist
+Raw SQL : SELECT * FROM tbl_cs_product_reviews_comments WHERE review_id=1 ORDER BY review_timestamp DESC
+
+Time : 13:49:29
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tbl_cs_product_reviews_comments' doesn't exist
+Raw SQL : SELECT * FROM tbl_cs_product_reviews_comments WHERE review_id=1 ORDER BY review_timestamp DESC
+
+Time : 13:49:14
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tbl_cs_product_reviews_comments' doesn't exist
+Raw SQL : SELECT * FROM tbl_cs_product_reviews_comments WHERE review_id=1 ORDER BY review_timestamp DESC
+
+Time : 13:30:25
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc = 'base_currency'' at line 1
+Raw SQL : SELECT * FROM tblmMiscTbl where desc = 'base_currency'

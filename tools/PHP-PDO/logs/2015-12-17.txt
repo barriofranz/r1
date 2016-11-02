@@ -1,0 +1,11 @@
+Time : 13:39:42
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(quantity) as qty, sum(`item_price`) as amt
+		from tblmSales where
+		`sales' at line 1
+Raw SQL : SELECT sku sum(quantity) as qty, sum(`item_price`) as amt
+		from tblmSales where
+		`sales_channel` = 'Amazon.com' and 
+		`purchase_date` >= '2015-11-19' and 
+		`purchase_date` < '2015-12-17' and
+		`order_status` = 'shipped'
+		group by sku

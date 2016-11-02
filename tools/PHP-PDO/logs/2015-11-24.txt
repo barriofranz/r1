@@ -1,0 +1,7 @@
+Time : 11:53:31
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tbl_cs_filters' doesn't exist
+Raw SQL : SELECT * FROM tbl_cs_filters ORDER BY filter_name ASC
+
+Time : 11:46:54
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'z.tbl_cs_filters' doesn't exist
+Raw SQL : SELECT * FROM tbl_cs_filters ORDER BY filter_name ASC
