@@ -95,3 +95,15 @@ define("BOOTSTRAP_MAIN_CSS_PATH","tools/bootstrap/v3.3.5/css/bootstrap.min.css")
 define("DATATABLES_MAIN_PATH","tools/datatables/v1.10.9/js/jquery.dataTables.min.js");
 define('DATATABLES_EXTENSIONS_PATH', 'tools/datatables/v1.10.9/extensions/');
 define('CURL_CLASS_PATH', 'tools/php-curl/Curl.class.php');
+
+
+
+
+define("TBL_ELEMENTS","eletd_Elements");
+
+
+
+
+
+
+
