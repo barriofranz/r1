@@ -1,0 +1,25 @@
+#product_reviews_table_div
+{
+	width: 1200px !important;
+	margin-left: auto ;
+  	margin-right: auto ;
+}
+
+
+#order_by_sku
+{
+	display:none;	
+    background:#ffffff;
+    margin:30px auto 0;
+    padding:6px;  
+    
+    z-index:100000;
+    position:fixed;
+    width:800px;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -40px;
+    border-color: #1878B5;
+    border-style: solid;
+}

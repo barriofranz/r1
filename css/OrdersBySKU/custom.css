@@ -1,0 +1,11 @@
+.table-orders-by-sku thead th 
+{
+	background-color: #1878B5;
+	color: #ffffff;
+	
+}
+
+#datepicker-custom-action
+{
+	position: absolute;
+}
